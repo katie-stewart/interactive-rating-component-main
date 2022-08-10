@@ -1,0 +1,90 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+p,
+.choices {
+    color: lightgray;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 420px;
+    min-height: 420px;
+}
+
+.card {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: auto;
+}
+
+.star {
+    width: 45px;
+    height: 45px;
+    /* background-color: hsl(216, 12%, 54%); */
+}
+
+.star-img {
+    border: 15px solid hsl(216, 12%, 54%);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.text {
+    max-width: 320px;
+}
+
+.choices {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.choices button {
+    /* border: 15px solid hsl(216, 12%, 54%); */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: hsl(216, 12%, 54%);
+}
+
+button {
+    background-color: hsl(25, 97%, 53%);
+    width: 340px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+}
+
+
+/* .choices {
+
+    border-radius: 50%;
+} */
