@@ -1,17 +1,12 @@
-$('.card').on('click', function() {
-    $('.card').toggleClass('flipped');
-    console.log('hey')
-});
+document.querySelectorAll(".rating").forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        document.getElementById("result-number").innerText = event.currentTarget.innerText
+        document.getElementById("submit-rating").removeAttribute("disabled")
+    })
+})
 
 
-registerForm.addEventListener('submit,' (event) => {
-            event.preventDefault();
-            if choices.value === confirm.Choices.value {
-                registerForm.submit();
-                else {
-                    console.log('Please select a rating');
-                }
-
-            });
-
-        $("button[type=submit]")
+document.getElementById("submit-rating").addEventListener('click', function(event) {
+    document.getElementById("rating").classList.add("is-hidden")
+    document.getElementById("result").classList.remove("is-hidden")
+})

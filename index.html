@@ -10,12 +10,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
     </style>
 
+
+
 </head>
 
 <body>
 
     <!-- Rating state start -->
-    <div class="page">
+    <div id="rating" class="page">
         <div class="card">
             <div class="star">
                 <img src="images/icon-star.svg" class="star-img">
@@ -25,18 +27,38 @@
                 <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             </div>
             <div class="choices">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
+                <button id="rating-number" class="rating">1</button>
+                <button id="rating-number" class="rating">2</button>
+                <button id="rating-number" class="rating">3</button>
+                <button id="rating-number" class="rating">4</button>
+                <button id="rating-number" class="rating">5</button>
             </div>
             <div class="submit">
-                <button type="submit">SUBMIT</button>
+                <button disabled="true" id="submit-rating" type="submit">SUBMIT</button>
             </div>
         </div>
     </div>
 
+
+
+    <!-- Rating state start -->
+    <div id="result" class="page-2 is-hidden">
+        <div class="card-2">
+            <div class="receipt">
+                <img src="images/illustration-thank-you.svg" class="receipt-img">
+            </div>
+            <div class="selection">
+                <p>You selected
+                    <span id="result-number"></span> out of 5</p>
+            </div>
+            <div class="thank-you">
+                <h1>Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </div>
+
+
+        </div>
+    </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
@@ -51,6 +73,7 @@
     <nav class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
     </nav>
+    <script src="app.js"></script>
 </body>
 
 </html>
