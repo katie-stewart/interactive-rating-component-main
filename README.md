@@ -29,9 +29,11 @@ I started with the HTML layout and styled the two pages using CSS. I used Javasc
 
 ### Built with
 
--HTML
--CSS
--Javascript
+- HTML
+
+- CSS
+
+- Javascript
 
 ### What I learned
 
